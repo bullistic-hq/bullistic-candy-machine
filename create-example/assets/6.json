@@ -1,0 +1,41 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Green Background"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Collared Shirt"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Sleepy"
+    }
+  ],
+  "collection": {
+    "name": "Froggies",
+    "family": "wat"
+  },
+  "description": "Foo foo foo",
+  "external_url": "https://gooddog.com/",
+  "name": "Frog #6",
+  "image": "6.png",
+  "properties": {
+    "category": "image",
+    "creators": [
+      {
+        "address": "REPLACE",
+        "share": 100
+      }
+    ],
+    "files": [
+      {
+        "uri": "6.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  "seller_fee_basis_points": 500,
+  "symbol": "FROG"
+}

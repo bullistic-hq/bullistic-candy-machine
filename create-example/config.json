@@ -1,0 +1,33 @@
+{
+  "price": 0.1,
+  "number": 24,
+  "symbol": "FROG",
+  "sellerFeeBasisPoints": 500,
+  "solTreasuryAccount": "REPLACE",
+  "splTokenAccount": null,
+  "splToken": null,
+  "publicSaleStartTime": "2022-09-29T12:22:56-06:00",
+  "allowlistSaleStartTime": "2022-09-28T12:22:56-06:00",
+  "hiddenSettings": null,
+  "uploadMethod": "bundlr",
+  "ipfsInfuraProjectId": "null",
+  "ipfsInfuraSecret": "null",
+  "awsConfig": {
+    "bucket": "null",
+    "profile": "null",
+    "directory": "null"
+  },
+  "shdwStorageAccount": "null",
+  "isMutable": true,
+  "limitPerAddress": 0,
+  "botProtectionEnabled": false,
+  "sequentialMintOrderEnabled": false,
+  "creatorAuthority": "REPLACE",
+  "creatorAuthorityOverride": "REPLACE",
+  "creators": [
+    {
+      "address": "REPLACE",
+      "share": 100
+    }
+  ]
+}

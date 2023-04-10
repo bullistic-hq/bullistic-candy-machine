@@ -1,0 +1,3 @@
+# See this: https://github.com/solana-labs/solana/issues/30271#issuecomment-1429147619
+[toolchain]
+channel = "1.66.1"

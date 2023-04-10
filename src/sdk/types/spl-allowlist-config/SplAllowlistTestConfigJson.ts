@@ -1,0 +1,10 @@
+import { MaybeUndef } from "@formfunction-hq/formfunction-program-shared";
+import KeypairObject from "tests/types/KeypairObject";
+
+type SplAllowlistTestConfigJson = {
+  allowlistMembers: Array<{ address: string; balance: string }>;
+  keypairs: MaybeUndef<Array<KeypairObject>>;
+  splTokenAllowlistMint: string;
+};
+
+export default SplAllowlistTestConfigJson;

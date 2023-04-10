@@ -1,0 +1,41 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Green Background"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Striped Shirt"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Surprised"
+    }
+  ],
+  "collection": {
+    "name": "Froggies",
+    "family": "wat"
+  },
+  "description": "Foo foo foo",
+  "external_url": "https://gooddog.com/",
+  "name": "Frog #15",
+  "image": "15.png",
+  "properties": {
+    "category": "image",
+    "creators": [
+      {
+        "address": "REPLACE",
+        "share": 100
+      }
+    ],
+    "files": [
+      {
+        "uri": "15.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  "seller_fee_basis_points": 500,
+  "symbol": "FROG"
+}
