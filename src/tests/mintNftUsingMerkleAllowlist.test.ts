@@ -1,14 +1,14 @@
 import {
   Environment,
   requestAirdrops,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import BuyerWithAllowlistProofData from "sdk/types/BuyerWithAllowlistProofData";
 import getConnectionAndSdkForTest from "tests/utils/getConnectionAndSdkForTest";
 import keypairObjectToKeypair from "tests/utils/keypairObjectToKeypair";
 import mintNftForTest from "tests/utils/mintNftForTest";
 import parseMerkleAllowlistForTest from "tests/utils/parseMerkleAllowlistForTest";
 
-describe("FormfnCandyMachineSdk minting using merkle allowlist.", () => {
+describe("BullisticCandyMachineSdk minting using merkle allowlist.", () => {
   test("Minting an NFT from a candy machine with a merkle allowlist proof works.", async () => {
     const allowlist = parseMerkleAllowlistForTest();
     const { merkleAllowlistData } = allowlist;

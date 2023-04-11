@@ -1,7 +1,7 @@
 import {
   Environment,
   requestAirdrops,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import assertBotTaxedTransaction from "tests/utils/assertBotTaxedTransaction";
 import getConnectionAndSdkForTest from "tests/utils/getConnectionAndSdkForTest";
@@ -10,7 +10,7 @@ import parseCandyMachinePubkeyForTest from "tests/utils/parseCandyMachinePubkeyF
 import parseSplAllowlistForTest from "tests/utils/parseSplAllowlistForTest";
 import invariant from "tiny-invariant";
 
-describe("FormfnCandyMachineSdk minting using SPL token allowlist.", () => {
+describe("BullisticCandyMachineSdk minting using SPL token allowlist.", () => {
   test("Minting an NFT from a candy machine with an SPL token allowlist works.", async () => {
     const allowlist = parseSplAllowlistForTest();
     const { keypairs: allowlistKeypairs } = allowlist;

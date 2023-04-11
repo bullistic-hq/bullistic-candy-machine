@@ -1,4 +1,4 @@
-import { MerkleTree } from "@formfunction-hq/formfunction-program-shared";
+import { MerkleTree } from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import MerkleAllowlistBuyerInfo from "sdk/types/MerkleAllowlistBuyerInfo";
 import constructMerkleLeafNode from "sdk/utils/merkle-tree/constructMerkleLeafNode";

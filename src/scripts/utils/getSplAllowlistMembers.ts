@@ -3,7 +3,7 @@ import {
   Environment,
   generateKeypairArray,
   Maybe,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import { SPL_ALLOWLIST_SIZE_FOR_TEST } from "scripts/constants";
 import getSplTokenAllowlistInputAddresses from "scripts/utils/getSplTokenAllowlistInputAddresses";

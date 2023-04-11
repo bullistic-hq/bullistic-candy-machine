@@ -1,7 +1,7 @@
 import {
   chunkArray,
   Environment,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import axios from "axios";
 import pLimit from "p-limit";
@@ -18,7 +18,7 @@ const RETRY_DELAY_MS = 1000;
 
 type UriBatch = Array<{ index: number; uri: string }>;
 
-// Note: Keep in sync with API parameters: https://github.com/formfunction-hq/formfn-monorepo/blob/main/packages/server/src/rest/intern/writeCandyMachineInfoToFirestoreEndpoint.ts
+// Note: Keep in sync with API parameters: https://github.com/bullistic-hq/bullistic-monorepo/blob/main/packages/server/src/rest/intern/writeCandyMachineInfoToFirestoreEndpoint.ts
 type RequestBody = {
   candyMachineAddress: string;
   offchainMetadataUris: UriBatch;

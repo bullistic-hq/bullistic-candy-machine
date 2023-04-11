@@ -1,6 +1,6 @@
-import { FORMFN_CANDY_MACHINE_IDL } from "sdk/idl";
+import { BULLISTIC_CANDY_MACHINE_IDL } from "sdk/idl";
 
-const INSTRUCTION_NAMES = FORMFN_CANDY_MACHINE_IDL.instructions.map(
+const INSTRUCTION_NAMES = BULLISTIC_CANDY_MACHINE_IDL.instructions.map(
   (ix) => ix.name
 );
 

@@ -1,4 +1,4 @@
-import { MerkleTreeNode } from "@formfunction-hq/formfunction-program-shared";
+import { MerkleTreeNode } from "@bullistic-hq/bullistic-program-shared";
 
 type MerkleAllowlistProof = Array<MerkleTreeNode>;
 

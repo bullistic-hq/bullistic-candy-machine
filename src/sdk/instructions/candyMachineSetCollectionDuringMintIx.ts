@@ -2,7 +2,7 @@ import {
   findEditionPda,
   findTokenMetadataPda,
   TOKEN_METADATA_PROGRAM_ID,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import {
   PublicKey,
   SYSVAR_INSTRUCTIONS_PUBKEY,

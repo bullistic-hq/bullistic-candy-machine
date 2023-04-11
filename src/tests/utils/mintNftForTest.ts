@@ -1,9 +1,9 @@
 import {
   ANTI_BOT_DEV_AUTHORITY_KEYPAIR,
   Maybe,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import FormfnCandyMachineSdk from "sdk/FormfnCandyMachineSdk";
+import BullisticCandyMachineSdk from "sdk/BullisticCandyMachineSdk";
 import BuyerWithAllowlistProofData from "sdk/types/BuyerWithAllowlistProofData";
 import CandyMachineAccount from "sdk/types/candy-machine/CandyMachineAccount";
 import getBuyerAllowlistTokenAccount from "tests/utils/getBuyerAllowlistTokenAccount";
@@ -22,7 +22,7 @@ export default async function mintNftForTest({
   buyer: Keypair;
   buyerWithAllowlistProofData: Maybe<BuyerWithAllowlistProofData>;
   candyMachine: PublicKey;
-  candyMachineSdk: FormfnCandyMachineSdk;
+  candyMachineSdk: BullisticCandyMachineSdk;
   candyMachineState: CandyMachineAccount;
   connection: Connection;
 }): Promise<{ mint: PublicKey; txid: string }> {

@@ -1,4 +1,4 @@
-import { assertUnreachable } from "@formfunction-hq/formfunction-program-shared";
+import { assertUnreachable } from "@bullistic-hq/bullistic-program-shared";
 import SplTokenAllowlistMode from "sdk/types/candy-machine/SplTokenAllowlistMode";
 import SplTokenAllowlistSettingsModeAnchorIdl from "sdk/types/candy-machine/SplTokenAllowlistSettingsModeAnchorIdl";
 

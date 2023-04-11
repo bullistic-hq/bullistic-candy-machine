@@ -1,7 +1,7 @@
 import {
   assertUnreachable,
   Environment,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 
 export default function getBackendApiUrlFromEnvironment(
   environment: Environment
@@ -10,11 +10,11 @@ export default function getBackendApiUrlFromEnvironment(
     case Environment.Local:
       return "http://localhost:4000";
     case Environment.Development:
-      return "https://apidev2.formfunction.xyz";
+      return "https://apidev2.bullistic.xyz";
     case Environment.Testnet:
-      return "https://apitest.formfunction.xyz";
+      return "https://apitest.bullistic.xyz";
     case Environment.Production:
-      return "https://api2.formfunction.xyz";
+      return "https://api2.bullistic.xyz";
     default: {
       return assertUnreachable(environment);
     }

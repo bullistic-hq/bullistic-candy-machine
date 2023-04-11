@@ -1,7 +1,7 @@
 import {
   findAtaPda,
   Maybe,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import CandyMachineAccount from "sdk/types/candy-machine/CandyMachineAccount";
 import CandyMachineSplTokenAllowlistSettings from "sdk/types/candy-machine/CandyMachineSplTokenAllowlistSettings";

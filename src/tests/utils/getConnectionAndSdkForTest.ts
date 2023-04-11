@@ -1,16 +1,16 @@
 import {
   Environment,
   requestAirdrops,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Wallet as AnchorWallet } from "@project-serum/anchor";
 import { Connection, Keypair } from "@solana/web3.js";
-import FormfnCandyMachineSdk from "sdk/FormfnCandyMachineSdk";
+import BullisticCandyMachineSdk from "sdk/BullisticCandyMachineSdk";
 import getRpcFromEnvironmentForTest from "tests/utils/getRpcFromEnvironmentForTest";
 
 export default async function getConnectionAndSdkForTest(
   environment: Environment
 ): Promise<{
-  candyMachineSdk: FormfnCandyMachineSdk;
+  candyMachineSdk: BullisticCandyMachineSdk;
   connection: Connection;
   environment: Environment;
   wallet: Keypair;
@@ -24,7 +24,7 @@ export default async function getConnectionAndSdkForTest(
 
   await requestAirdrops({ connection, environment, wallets: [walletKeypair] });
 
-  const candyMachineSdk = new FormfnCandyMachineSdk({
+  const candyMachineSdk = new BullisticCandyMachineSdk({
     connection,
     environment,
     wallet,

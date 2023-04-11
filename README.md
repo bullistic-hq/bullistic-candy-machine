@@ -1,7 +1,7 @@
 ![](banner.jpeg)
 
 <div align="center">
-  <h1>Formfunction Candy Machine</h1>
+  <h1>Bullistic Candy Machine</h1>
   <a href="#overview">Overview</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
   <a href="#repo-structure">Repo Structure</a>
@@ -30,7 +30,7 @@
 
 ## Overview
 
-Formfunction fork of [Metaplex Candy Machine v2](https://github.com/metaplex-foundation/metaplex-program-library/tree/master/candy-machine). This includes our modified program code and client SDK. The repo also includes a fork of the [Metaplex Sugar CLI](https://github.com/metaplex-foundation/sugar) which is used for creating and interacting with candy machines. The main change to the program is support for Merkle allowlists.
+Bullistic fork of [Metaplex Candy Machine v2](https://github.com/metaplex-foundation/metaplex-program-library/tree/master/candy-machine). This includes our modified program code and client SDK. The repo also includes a fork of the [Metaplex Sugar CLI](https://github.com/metaplex-foundation/sugar) which is used for creating and interacting with candy machines. The main change to the program is support for Merkle allowlists.
 
 - Mainnet address: `gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy`
 - Devnet address (same as mainnet): `gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy`
@@ -42,8 +42,8 @@ Formfunction fork of [Metaplex Candy Machine v2](https://github.com/metaplex-fou
 ├── create-example           # Folder containing example assets and config for a candy machine
 ├── keys                     # Program keypairs for devnet and testnet deployments
 ├── programs                 # Rust program source code
-│   ├── formfn-candy-machine # Candy machine program
-│   ├── formfn-sugar         # Sugar CLI program
+│   ├── bullistic-candy-machine # Candy machine program
+│   ├── bullistic-sugar         # Sugar CLI program
 ├── scripts                  # Some helper bash scripts for the repo
 ├── src                      # TypeScript source folder
 │   ├── ...                  # Other SDK folders
@@ -110,12 +110,12 @@ $ yarn test
 
 ## Sugar CLI
 
-There is a forked version of the Metaplex Sugar CLI in `programs/formfn-sugar`. This is being used to handle uploading assets and candy machine initialization. It imports the `formfn-candy-machine` program.
+There is a forked version of the Metaplex Sugar CLI in `programs/bullistic-sugar`. This is being used to handle uploading assets and candy machine initialization. It imports the `bullistic-candy-machine` program.
 
 - Original repository: https://github.com/metaplex-foundation/sugar
 - Documentation: https://docs.metaplex.com/sugar/introduction
 
-To run commands with the CLI, you can `cd programs/formfn-sugar` and run normal cargo commands, or run them from the top level like this:
+To run commands with the CLI, you can `cd programs/bullistic-sugar` and run normal cargo commands, or run them from the top level like this:
 
 ```sh
 # Runs cargo run -- --version, which invokes the Sugar CLI with the --version argument
@@ -149,7 +149,7 @@ The size of the allowlist data will be determined by the settings in the `script
 There are several different tests included in the repo. To explain them and how to run them it's easier to just look at the npm scripts which are available (note: keep this in sync with `package.json`):
 
 ```sh
-# Run the programs/formfn-candy-machine/tests Rust tests using Cargo.
+# Run the programs/bullistic-candy-machine/tests Rust tests using Cargo.
 # These test the program directly using the solana_program_test crate.
 $ yarn test-program
 $ yarn test-program-debug
@@ -264,7 +264,7 @@ Follow the following steps to publish a new version of the TypeScript SDK:
 2. Run `git push origin NEW_TAG`.
 3. `git push` the new commit as well.
 
-This will push the new release tag to GitHub and trigger the release pipeline, after which clients can install the latest SDK with `yarn add @formfunction-hq/formfunction-candy-machine@latest`.
+This will push the new release tag to GitHub and trigger the release pipeline, after which clients can install the latest SDK with `yarn add @bullistic-hq/bullistic-candy-machine@latest`.
 
 ## Tips
 

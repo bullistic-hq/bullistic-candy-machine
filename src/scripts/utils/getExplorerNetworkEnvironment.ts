@@ -2,7 +2,7 @@ import {
   assertUnreachable,
   Environment,
   Maybe,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 
 function getLinkWithEnvironmentParam(

@@ -1,8 +1,8 @@
 {
-  "name": "@formfunction-hq/formfunction-candy-machine",
+  "name": "@bullistic-hq/bullistic-candy-machine",
   "version": "0.0.40",
-  "description": "Client SDK for Formfunction Candy Machine program.",
-  "repository": "https://github.com/formfunction-hq/formfn-candy-machine",
+  "description": "Client SDK for Bullistic Candy Machine program.",
+  "repository": "https://github.com/bullistic-hq/bullistic-candy-machine",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "dist"
   ],
   "publishConfig": {
-    "@formfunction-hq:registry": "https://npm.pkg.github.com"
+    "@bullistic-hq:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "prepare": "husky install",
@@ -25,16 +25,16 @@
     "test-program": "RUST_LOG=error cargo +1.66.1 test-bpf --features \"use-test-anti-bot-authority\" --",
     "test-program-debug": "RUST_BACKTRACE=1 cargo +1.66.1 test-bpf --features \"use-test-anti-bot-authority\" -- --nocapture",
     "test-unit": "jest src/tests/unit/*.test.ts",
-    "test-cli": "./programs/formfn-sugar/script/sugar-cli-test.sh",
+    "test-cli": "./programs/bullistic-sugar/script/sugar-cli-test.sh",
     "test-local-spl": "yarn build-program && anchor test spl --skip-build",
     "test-local-merkle": "yarn build-program && anchor test merkle --skip-build",
     "test-local": "yarn test-local-spl && yarn test-local-merkle",
     "test-sdk": "jest src/tests/*.test.ts",
     "test-sdk-debug": "DEBUG=true yarn test-sdk",
     "test": "yarn test-unit && yarn test-program && yarn test-local",
-    "sugar": "cd programs/formfn-sugar && cargo run",
+    "sugar": "cd programs/bullistic-sugar && cargo run",
     "deploy-program": "./scripts/deploy-program.sh",
-    "create-candy-machine": "./programs/formfn-sugar/script/sugar-create-candy.sh",
+    "create-candy-machine": "./programs/bullistic-sugar/script/sugar-create-candy.sh",
     "estimate-proof-sizes": "ts-node -r tsconfig-paths/register src/scripts/estimateProofSizes.ts",
     "print-candy-machine": "ts-node -r tsconfig-paths/register src/scripts/printCandyMachineState.ts",
     "upload-candy-machine": "ts-node -r tsconfig-paths/register src/scripts/uploadCandyMachine.ts",
@@ -49,7 +49,7 @@
     "dump": "./scripts/solana-program-dump.sh"
   },
   "dependencies": {
-    "@formfunction-hq/formfunction-program-shared": "0.0.58",
+    "@bullistic-hq/bullistic-program-shared": "0.0.58",
     "@solana/spl-token": "^0.3.7",
     "bn.js": "^5.2.0",
     "dayjs": "^1.11.5",

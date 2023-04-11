@@ -6,7 +6,7 @@ import {
   findTokenMetadataPda,
   Maybe,
   TOKEN_METADATA_PROGRAM_ID,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   TOKEN_PROGRAM_ID,

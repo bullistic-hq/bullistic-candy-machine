@@ -1,4 +1,4 @@
-import { MerkleLeaf } from "@formfunction-hq/formfunction-program-shared";
+import { MerkleLeaf } from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import BN from "bn.js";
 import MerkleAllowlistBuyerInfo from "sdk/types/MerkleAllowlistBuyerInfo";

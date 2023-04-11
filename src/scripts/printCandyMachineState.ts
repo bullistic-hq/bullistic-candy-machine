@@ -2,7 +2,7 @@
 import {
   jsonStringify,
   Maybe,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import BN from "bn.js";
 import parsePrintCandyMachineStateArgs from "scripts/utils/env/parsePrintCandyMachineStateArgs";
 import getCandyMachineSdkForScript from "scripts/utils/getCandyMachineSdkForScript";

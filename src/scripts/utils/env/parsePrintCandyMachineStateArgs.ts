@@ -1,7 +1,7 @@
 import {
   Environment,
   stringToPublicKey,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import parseEnvironmentArg from "scripts/utils/env/parseEnvironmentArg";
 import parseCandyMachinePubkeyForTest from "tests/utils/parseCandyMachinePubkeyForTest";

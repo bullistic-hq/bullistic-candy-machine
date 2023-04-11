@@ -1,4 +1,4 @@
-import { Maybe } from "@formfunction-hq/formfunction-program-shared";
+import { Maybe } from "@bullistic-hq/bullistic-program-shared";
 import { readFileSync } from "fs";
 import MerkleAllowlistConfig from "sdk/types/MerkleAllowlistConfig";
 import { MERKLE_ALLOWLIST_CONFIG_FILENAME } from "tests/constants/allowlistConfig";

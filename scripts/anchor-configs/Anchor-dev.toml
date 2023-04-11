@@ -2,13 +2,13 @@
 seeds = false
 
 [programs.localnet]
-formfn_candy_machine = "gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy"
+bullistic_candy_machine = "gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy"
 
 [programs.devnet]
-formfn_candy_machine = "gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy"
+bullistic_candy_machine = "gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy"
 
 [programs.testnet]
-formfn_candy_machine = "gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy"
+bullistic_candy_machine = "gachaC2NGh63y4ogLK8xHLeB5ZFZ8ypDLXEQyKNm8sy"
 
 [registry]
 url = "https://anchor.projectserum.com"
@@ -23,7 +23,7 @@ wallet = "keys/devnet/deployer-keypair.json"
 
 [workspace]
 members = [
-  "programs/formfn-candy-machine",
+  "programs/bullistic-candy-machine",
 ]
 
 [scripts]

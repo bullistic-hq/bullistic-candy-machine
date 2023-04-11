@@ -1,4 +1,4 @@
-import { generateKeypairArray } from "@formfunction-hq/formfunction-program-shared";
+import { generateKeypairArray } from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import MerkleAllowlistBuyerInfo from "sdk/types/MerkleAllowlistBuyerInfo";
 import constructMerkleAllowlist from "sdk/utils/merkle-tree/constructMerkleAllowlist";
@@ -38,7 +38,7 @@ function estimateProofSizesWithFormula(
     ["Proof size in bytes"]: proofSize * BYTES_PER_PROOF_ELEM,
   });
 
-  // See details here for calculation: https://github.com/formfunction-hq/formfn-candy-machine/pull/61
+  // See details here for calculation: https://github.com/bullistic-hq/bullistic-candy-machine/pull/61
   const nextAllowlistSize =
     allowlistSize < 2 ? allowlistSize + 1 : allowlistSize * 2 - 1;
 

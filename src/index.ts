@@ -1,13 +1,13 @@
 import MERKLE_TREE_LEAF_COUNT_LIMIT from "sdk/constants/MerkleTreeLeafCountLimit";
-import FormfnCandyMachineSdk from "sdk/FormfnCandyMachineSdk";
-import { FORMFN_CANDY_MACHINE_IDL } from "sdk/idl";
+import BullisticCandyMachineSdk from "sdk/BullisticCandyMachineSdk";
+import { BULLISTIC_CANDY_MACHINE_IDL } from "sdk/idl";
 import BuyerWithAllowlistProofData from "sdk/types/BuyerWithAllowlistProofData";
 import CandyMachineAccount from "sdk/types/candy-machine/CandyMachineAccount";
 import CandyMachineSplTokenAllowlistSettings from "sdk/types/candy-machine/CandyMachineSplTokenAllowlistSettings";
 import SplTokenAllowlistMode from "sdk/types/candy-machine/SplTokenAllowlistMode";
 import SplTokenAllowlistSettingsModeAnchorIdl from "sdk/types/candy-machine/SplTokenAllowlistSettingsModeAnchorIdl";
 import CandyMachineInstructionName from "sdk/types/CandyMachineInstructionName";
-import DecodedFormfnCandyMachineTransactionResult from "sdk/types/DecodedFormfnCandyMachineTransactionResult";
+import DecodedBullisticCandyMachineTransactionResult from "sdk/types/DecodedBullisticCandyMachineTransactionResult";
 import MerkleAllowlistBuyer from "sdk/types/MerkleAllowlistBuyer";
 import MerkleAllowlistBuyerInfo from "sdk/types/MerkleAllowlistBuyerInfo";
 import MerkleAllowlistProof from "sdk/types/MerkleAllowlistProof";
@@ -24,7 +24,7 @@ export {
   CandyMachineInstructionName,
   MintPhase as CandyMachineMintPhase,
   CandyMachineSplTokenAllowlistSettings,
-  DecodedFormfnCandyMachineTransactionResult,
+  DecodedBullisticCandyMachineTransactionResult,
   MerkleAllowlistBuyer,
   MerkleAllowlistBuyerInfo,
   MerkleAllowlistProof,
@@ -34,7 +34,7 @@ export {
 
 export { MERKLE_TREE_LEAF_COUNT_LIMIT };
 
-export { FORMFN_CANDY_MACHINE_IDL };
+export { BULLISTIC_CANDY_MACHINE_IDL };
 
 export {
   decodeCandyMachineTransaction,
@@ -44,4 +44,4 @@ export {
   parseSplTokenAllowlistModeEnum,
 };
 
-export default FormfnCandyMachineSdk;
+export default BullisticCandyMachineSdk;

@@ -2,7 +2,7 @@ import {
   chunkArray,
   generateKeypairArray,
   randomNumberInRange,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import constructMerkleAllowlist from "sdk/utils/merkle-tree/constructMerkleAllowlist";
 

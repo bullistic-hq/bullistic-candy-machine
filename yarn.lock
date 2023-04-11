@@ -332,9 +332,9 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@formfunction-hq/formfunction-program-shared@0.0.58":
+"@bullistic-hq/bullistic-program-shared@0.0.58":
   version "0.0.58"
-  resolved "https://npm.pkg.github.com/download/@formfunction-hq/formfunction-program-shared/0.0.58/580eeb221bf5937f91c891b262b536c54359264f#580eeb221bf5937f91c891b262b536c54359264f"
+  resolved "https://npm.pkg.github.com/download/@bullistic-hq/bullistic-program-shared/0.0.58/580eeb221bf5937f91c891b262b536c54359264f#580eeb221bf5937f91c891b262b536c54359264f"
   integrity sha512-8S4ujTnYYy6lOU0/7tgEqarDiSuECRHNVIu9Q7dZu4bHuLKZ83RdMLcHVnQQhY83FvyighB5L1oYpbNyjQCIBw==
   dependencies:
     "@solana/spl-token" "^0.3.7"

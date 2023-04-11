@@ -1,4 +1,4 @@
-import { MaybeUndef } from "@formfunction-hq/formfunction-program-shared";
+import { MaybeUndef } from "@bullistic-hq/bullistic-program-shared";
 import dayjs, { Dayjs } from "dayjs";
 import MintPhase from "sdk/types/MintPhase";
 

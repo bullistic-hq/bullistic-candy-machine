@@ -42,7 +42,7 @@ fi
 echo -e "\nBuilding program ID $PROGRAM_ID for Solana $ENVIRONMENT.\n"
 
 # Build program.
-cargo +bpf build --package formfn-candy-machine --target bpfel-unknown-unknown --release  --features use-test-anti-bot-authority
+cargo +bpf build --package bullistic-candy-machine --target bpfel-unknown-unknown --release  --features use-test-anti-bot-authority
 echo -e "\nBuild finished!\n"
 
 DEPLOYER_ADDRESS=$(solana-keygen pubkey keys/devnet/deployer-keypair.json)
@@ -58,9 +58,9 @@ echo    # (optional) move to a new line.
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   # Deploy program.
-  echo -e "Calling solana program deploy target/deploy/formfn_candy_machine.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json\n"
+  echo -e "Calling solana program deploy target/deploy/bullistic_candy_machine.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json\n"
   echo -e "This will take a moment...\n"
-  solana program deploy ./target/deploy/formfn_candy_machine.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json
+  solana program deploy ./target/deploy/bullistic_candy_machine.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json
 
   reset
   echo -e "Program deploy to $ENVIRONMENT finished successfully! Don't forget to update the Program Versions document.\n"

@@ -2,7 +2,7 @@ import {
   chunkArray,
   MerkleTree,
   serializeMerkleProof,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import MERKLE_TREE_LEAF_COUNT_LIMIT from "sdk/constants/MerkleTreeLeafCountLimit";
 import MerkleAllowlistBuyerInfo from "sdk/types/MerkleAllowlistBuyerInfo";

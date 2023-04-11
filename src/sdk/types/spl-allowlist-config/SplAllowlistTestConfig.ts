@@ -1,4 +1,4 @@
-import { MaybeUndef } from "@formfunction-hq/formfunction-program-shared";
+import { MaybeUndef } from "@bullistic-hq/bullistic-program-shared";
 import { Keypair, PublicKey } from "@solana/web3.js";
 
 type SplAllowlistTestConfig = {

@@ -1,12 +1,12 @@
 import {
   Environment,
   requestAirdrops,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Wallet as AnchorWallet } from "@project-serum/anchor";
 import { Connection } from "@solana/web3.js";
 import { DEVNET_AIRDROP_SIZE_SOL } from "scripts/constants";
 import getWalletKeypairForScript from "scripts/utils/getWalletKeypairForScript";
-import FormfnCandyMachineSdk from "sdk/FormfnCandyMachineSdk";
+import BullisticCandyMachineSdk from "sdk/BullisticCandyMachineSdk";
 import getRpcFromEnvironmentForTest from "tests/utils/getRpcFromEnvironmentForTest";
 
 export default async function getCandyMachineSdkForScript(
@@ -37,7 +37,7 @@ export default async function getCandyMachineSdkForScript(
     }
   }
 
-  const candyMachineSdk = new FormfnCandyMachineSdk({
+  const candyMachineSdk = new BullisticCandyMachineSdk({
     connection,
     environment,
     wallet,

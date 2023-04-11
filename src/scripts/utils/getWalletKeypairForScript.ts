@@ -1,7 +1,7 @@
 import {
   assertUnreachable,
   Environment,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import { readFileSync } from "fs";
 

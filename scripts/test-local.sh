@@ -11,7 +11,7 @@ if [ "$ALLOWLIST_TYPE" = "spl" ]; then
 
   yarn generate-spl-allowlist-config
 
-  echo -e "\n🚧 Deploying candy machine and allowlist using formfn-sugar CLI..."
+  echo -e "\n🚧 Deploying candy machine and allowlist using bullistic-sugar CLI..."
 
   yarn test-cli use-spl-allowlist || {
     echo -e "\nAborting test run, yarn test-cli commmand failed."
@@ -35,7 +35,7 @@ if [ "$ALLOWLIST_TYPE" = "merkle" ]; then
 
   yarn generate-merkle-allowlist-config
 
-  echo -e "\n🚧 Deploying candy machine and allowlist using formfn-sugar CLI..."
+  echo -e "\n🚧 Deploying candy machine and allowlist using bullistic-sugar CLI..."
 
   yarn test-cli use-merkle-allowlist || {
     echo -e "\nAborting test run, yarn test-cli commmand failed."

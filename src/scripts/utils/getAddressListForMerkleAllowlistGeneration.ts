@@ -2,7 +2,7 @@ import {
   generateKeypairArray,
   Maybe,
   randomNumberInRange,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import getMerkleAllowlistInputAddresses from "scripts/utils/getMerkleAllowlistInputAddresses";
 import MerkleAllowlistBuyerInfo from "sdk/types/MerkleAllowlistBuyerInfo";

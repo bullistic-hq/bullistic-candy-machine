@@ -1,7 +1,7 @@
 import {
   Environment,
   MaybeUndef,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 
 export default function parseEnvironmentArg(
   environment: MaybeUndef<string>

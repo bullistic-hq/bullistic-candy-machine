@@ -1,18 +1,18 @@
 import {
   decodeTransactionUsingProgramIdl,
   Maybe,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { ParsedTransactionWithMeta, PublicKey } from "@solana/web3.js";
-import { FORMFN_CANDY_MACHINE_IDL } from "sdk/idl";
-import DecodedFormfnCandyMachineTransactionResult from "sdk/types/DecodedFormfnCandyMachineTransactionResult";
+import { BULLISTIC_CANDY_MACHINE_IDL } from "sdk/idl";
+import DecodedBullisticCandyMachineTransactionResult from "sdk/types/DecodedBullisticCandyMachineTransactionResult";
 
 export default function decodeCandyMachineTransaction(
   programId: PublicKey,
   parsedTransaction: ParsedTransactionWithMeta
-): Maybe<DecodedFormfnCandyMachineTransactionResult> {
-  for (const idl of [FORMFN_CANDY_MACHINE_IDL]) {
+): Maybe<DecodedBullisticCandyMachineTransactionResult> {
+  for (const idl of [BULLISTIC_CANDY_MACHINE_IDL]) {
     const result =
-      decodeTransactionUsingProgramIdl<DecodedFormfnCandyMachineTransactionResult>(
+      decodeTransactionUsingProgramIdl<DecodedBullisticCandyMachineTransactionResult>(
         idl,
         programId,
         parsedTransaction

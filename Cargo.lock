@@ -1815,7 +1815,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "formfn-candy-machine"
+name = "bullistic-candy-machine"
 version = "0.0.1"
 dependencies = [
  "anchor-client",
@@ -1840,7 +1840,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "formfn-sugar-cli"
+name = "bullistic-sugar-cli"
 version = "0.6.3"
 dependencies = [
  "anchor-client",
@@ -1859,7 +1859,7 @@ dependencies = [
  "dateparser",
  "dialoguer",
  "dirs",
- "formfn-candy-machine",
+ "bullistic-candy-machine",
  "futures",
  "glob",
  "indexmap",

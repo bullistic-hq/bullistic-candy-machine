@@ -1,4 +1,4 @@
-import { createSplToken } from "@formfunction-hq/formfunction-program-shared";
+import { createSplToken } from "@bullistic-hq/bullistic-program-shared";
 import { exec } from "child_process";
 import { writeFileSync } from "fs";
 import parseSplAllowlistConfigArgs from "scripts/utils/env/parseSplAllowlistConfigArgs";

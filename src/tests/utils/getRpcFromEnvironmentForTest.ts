@@ -1,7 +1,7 @@
 import {
   assertUnreachable,
   Environment,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 
 export default function getRpcFromEnvironmentForTest(
   environment: Environment

@@ -1,4 +1,4 @@
-import { Environment } from "@formfunction-hq/formfunction-program-shared";
+import { Environment } from "@bullistic-hq/bullistic-program-shared";
 import parseEnvironmentArg from "scripts/utils/env/parseEnvironmentArg";
 import yargs from "yargs";
 

@@ -1,5 +1,5 @@
 // Note: The (merkle allowlist size / leaf count) needs to not be larger than program
-// NUMBER_OF_MERKLE_ROOTS_TO_STORE constant (programs/formfn-candy-machine/src/constants.rs).
+// NUMBER_OF_MERKLE_ROOTS_TO_STORE constant (programs/bullistic-candy-machine/src/constants.rs).
 export const MERKLE_ALLOWLIST_SIZE = 100;
 
 export const MERKLE_TREE_LEAF_COUNT_FOR_TESTS = 20;

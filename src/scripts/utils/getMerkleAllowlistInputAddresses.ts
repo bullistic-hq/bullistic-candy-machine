@@ -1,4 +1,4 @@
-import { stringToPublicKey } from "@formfunction-hq/formfunction-program-shared";
+import { stringToPublicKey } from "@bullistic-hq/bullistic-program-shared";
 import { readFileSync } from "fs";
 import { DEFAULT_MERKLE_ALLOWLIST_AMOUNT } from "scripts/constants";
 import isPositiveInteger from "scripts/utils/isPositiveInteger";

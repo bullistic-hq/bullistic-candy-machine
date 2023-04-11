@@ -1,4 +1,4 @@
-import { PdaResult } from "@formfunction-hq/formfunction-program-shared";
+import { PdaResult } from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 
 export default function findCandyMachineCreatorPda(

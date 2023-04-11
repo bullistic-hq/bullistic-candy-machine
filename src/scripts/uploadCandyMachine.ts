@@ -2,7 +2,7 @@ import {
   arePublicKeysEqual,
   Maybe,
   stringToPublicKey,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import parseEnvironmentArg from "scripts/utils/env/parseEnvironmentArg";
 import handleUploadCandyMachine from "scripts/utils/handleUploadCandyMachine";

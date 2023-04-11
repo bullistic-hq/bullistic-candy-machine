@@ -1,4 +1,4 @@
-import { estimateTransactionSizeInBytes } from "@formfunction-hq/formfunction-program-shared";
+import { estimateTransactionSizeInBytes } from "@bullistic-hq/bullistic-program-shared";
 import {
   ConfirmOptions,
   Connection,

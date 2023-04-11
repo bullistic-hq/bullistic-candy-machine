@@ -2,7 +2,7 @@ import {
   Environment,
   Maybe,
   stringToPublicKey,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import axios from "axios";
 import { API_HEADERS } from "scripts/constants";
@@ -18,7 +18,7 @@ export type CandyMachineAllowlistEntry = {
   rootIndex: number;
 };
 
-// Note: Keep in sync with API parameters: https://github.com/formfunction-hq/formfn-monorepo/blob/main/packages/server/src/rest/intern/importOnchainCandyMachine.ts#L14
+// Note: Keep in sync with API parameters: https://github.com/bullistic-hq/bullistic-monorepo/blob/main/packages/server/src/rest/intern/importOnchainCandyMachine.ts#L14
 export interface ImportOnchainCandyMachineRequestBody {
   allowlistInfo?: Array<CandyMachineAllowlistEntry>;
   candyMachineAddress: string;
@@ -70,15 +70,15 @@ export default async function handleUploadCandyMachine(
     candyMachineAddress: candyMachineAddress.toString(),
     creatorAuthorityOverride,
     logoAssetSrc:
-      "https://formfunction.imgix.net/adhoc/popheadz/popheadz-logo.png",
+      "https://bullistic.imgix.net/adhoc/popheadz/popheadz-logo.png",
     mintPreviewAssetSrc:
-      "https://formfunction.imgix.net/adhoc/popheadz/popheadz-mint-preview.gif",
+      "https://bullistic.imgix.net/adhoc/popheadz/popheadz-mint-preview.gif",
     premintPreviewAssetSrcs: [
-      "https://formfunction.imgix.net/adhoc/popheadz/1.png",
-      "https://formfunction.imgix.net/adhoc/popheadz/2.png",
-      "https://formfunction.imgix.net/adhoc/popheadz/3.png",
-      "https://formfunction.imgix.net/adhoc/popheadz/4.png",
-      "https://formfunction.imgix.net/adhoc/popheadz/5.png",
+      "https://bullistic.imgix.net/adhoc/popheadz/1.png",
+      "https://bullistic.imgix.net/adhoc/popheadz/2.png",
+      "https://bullistic.imgix.net/adhoc/popheadz/3.png",
+      "https://bullistic.imgix.net/adhoc/popheadz/4.png",
+      "https://bullistic.imgix.net/adhoc/popheadz/5.png",
     ],
     randomizeSeriesSlug,
   };

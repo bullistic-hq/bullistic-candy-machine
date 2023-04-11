@@ -1,4 +1,4 @@
-import { Maybe } from "@formfunction-hq/formfunction-program-shared";
+import { Maybe } from "@bullistic-hq/bullistic-program-shared";
 import { readFileSync } from "fs";
 import { METADATA_URIS_FILENAME } from "scripts/constants";
 

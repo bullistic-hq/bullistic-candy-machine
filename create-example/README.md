@@ -4,7 +4,7 @@
 
 To create a new candy machine, follow these steps:
 
-1. First include all of the assets for the deployment in the `formfn-candy-machine/create` folder. The current folder, `create-example`, serves as an example of what you need. In particular, you need:
+1. First include all of the assets for the deployment in the `bullistic-candy-machine/create` folder. The current folder, `create-example`, serves as an example of what you need. In particular, you need:
 
 - A `create/assets` folder which contains all of the candy machine collection NFT images and associated metadata files, in addition to a `collection.json` and `collection.png` file. For testing, you can just copy `create-example/assets`.
 - A `create/config.json` file which includes config for the candy machine. For testing, you can just copy `create-example/config.json` (and modify it if you want to change the config at all).
@@ -73,7 +73,7 @@ Finally, you need to create the onchain candy machine.
 
 1. [Optional] If you need to configure a Hydra wallet for the candy machine treasury, do this first:
 
-- Setup a Hydra wallet by [following these steps](https://github.com/formfunction-hq/formfn-hydra#creating-a-hydra-wallet).
+- Setup a Hydra wallet by [following these steps](https://github.com/bullistic-hq/bullistic-hydra#creating-a-hydra-wallet).
 - Provide the created holding account wallet address (or ata) as the candy machine treasury wallet in the `config.json` file (created below) as the `solTreasuryAccount` or `splTokenAccount`. This holding account address should be printed out clearly in the Hydra wallet setup commands.
 
 2. [Optional] Change the public sale and allowlist start times
