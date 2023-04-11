@@ -1,6 +1,6 @@
 {
   "name": "@bullistic-hq/bullistic-candy-machine",
-  "version": "0.0.40",
+  "version": "0.0.41",
   "description": "Client SDK for Bullistic Candy Machine program.",
   "repository": "https://github.com/bullistic-hq/bullistic-candy-machine",
   "license": "UNLICENSED",
@@ -49,7 +49,7 @@
     "dump": "./scripts/solana-program-dump.sh"
   },
   "dependencies": {
-    "@bullistic-hq/bullistic-program-shared": "0.0.64",
+    "@bullistic-hq/bullistic-program-shared": "0.0.65",
     "@solana/spl-token": "^0.3.7",
     "bn.js": "^5.2.0",
     "dayjs": "^1.11.5",
