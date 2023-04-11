@@ -49,7 +49,7 @@
     "dump": "./scripts/solana-program-dump.sh"
   },
   "dependencies": {
-    "@bullistic-hq/bullistic-program-shared": "0.0.58",
+    "@bullistic-hq/bullistic-program-shared": "0.0.64",
     "@solana/spl-token": "^0.3.7",
     "bn.js": "^5.2.0",
     "dayjs": "^1.11.5",
