@@ -1,0 +1,38 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  ANCHOR_VERSION: 0.27.0
+  SOLANA_CLI_VERSION: 1.14.16
+  
+jobs:      
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Configure .npmrc
+        run: |
+          echo "@bullistic-hq:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_PUBLISH_TOKEN }}" >> .npmrc
+      - run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        shell: bash
+      - run: echo "/home/runner/.cargo/bin" >> $GITHUB_PATH
+        shell: bash
+      - run: npm i -g @coral-xyz/anchor-cli@$ANCHOR_VERSION
+      - uses: ./.github/actions/setup-solana/
+      - run: yarn install
+      - run: yarn run build
+      - run: |
+          git config --global user.email "bullisticxyz@gmail.com"
+          git config --global user.name "Bullistic"
+      - run: yarn publish --yes
